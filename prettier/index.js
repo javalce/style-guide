@@ -5,14 +5,20 @@
  * See: https://github.com/prettier/prettier/blob/main/docs/configuration.md#editorconfig
  */
 const overridableDefaults = {
-  endOfLine: 'lf',
-  tabWidth: 2,
   printWidth: 100,
+  tabWidth: 2,
   useTabs: false,
+  endOfLine: 'lf',
 };
 
+/** @type {import('prettier').Config} */
 module.exports = {
   ...overridableDefaults,
+  trailingComma: 'all',
+  semi: true,
   singleQuote: true,
+  jsxSingleQuote: true,
+  bracketSpacing: true,
+  arrowParens: 'always',
   plugins: ['prettier-plugin-packagejson'],
 };

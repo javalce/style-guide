@@ -14,6 +14,7 @@
   "author": "Javier Valero <javalce29@gmail.com>",
   "scripts": {
     "format:check": "prettier --check .",
+    "lint:check": "eslint --max-warnings=0 .",
     "prepare": "husky",
     "sematic-release": "semantic-release",
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,14 +23,36 @@
     "*": "prettier -w --ignore-unknown"
   },
   "prettier": "./prettier",
+  "dependencies": {
+    "@babel/core": "^7.24.7",
+    "@babel/eslint-parser": "^7.24.7",
+    "@rushstack/eslint-patch": "^1.10.3",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-eslint-comments": "^3.2.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unicorn": "^54.0.0",
+    "prettier-plugin-packagejson": "^2.5.0"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
     "@commitlint/config-conventional": "^19.2.2",
     "@semantic-release/git": "^10.0.1",
+    "eslint": "^8.57.0",
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "prettier": "^3.3.2",
-    "prettier-plugin-packagejson": "^2.5.0",
     "semantic-release": "^24.0.0"
+  },
+  "peerDependencies": {
+    "eslint": ">=8.0.0 <9",
+    "prettier": ">=3.0.0 <4"
+  },
+  "peerDependenciesMeta": {
+    "eslint": {
+      "optional": true
+    },
+    "prettier": {
+      "optional": true
+    }
   }
 }

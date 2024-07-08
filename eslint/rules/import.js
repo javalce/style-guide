@@ -77,6 +77,13 @@ module.exports = {
           'index', // Relative index
         ],
         'newlines-between': 'always',
+        pathGroups: [
+          {
+            group: 'external',
+            pattern: '~/**',
+            position: 'after',
+          },
+        ],
       },
     ],
   },

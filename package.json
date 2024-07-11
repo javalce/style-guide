@@ -21,10 +21,9 @@
     "format:check": "prettier --check .",
     "lint:check": "eslint --max-warnings=0 .",
     "prepare": "husky",
-    "publish": "pnpm publish",
-    "release:major": "bumpp major",
-    "release:minor": "bumpp minor",
-    "release:patch": "bumpp patch"
+    "release:major": "bumpp major && pnpm publish",
+    "release:minor": "bumpp minor && pnpm publish",
+    "release:patch": "bumpp patch && pnpm publish"
   },
   "lint-staged": {
     "*": "prettier -w --ignore-unknown"

@@ -3,13 +3,13 @@
 <a aria-label="NPM version" href="https://www.npmjs.com/package/@javalce/style-guide">
   <img alt="" src="https://img.shields.io/npm/v/@javalce/style-guide.svg?style=flat-square&labelColor=000000">
 </a>
-<a aria-label="License" href="https://github.com/javalce/style-guide/blob/master/LICENSE">
+<a aria-label="License" href="https://github.com/javalce/style-guide/blob/main/LICENSE">
   <img alt="" src="https://img.shields.io/npm/l/@javalce/style-guide.svg?style=flat-square&labelColor=000000">
 </a>
 
 ## Introduction
 
-This repository contains the style guide that I like and use in my projects. It is based on the [javalce Style Guide](https://github.com/javalce/style-guide).
+This repository contains the style guide that I like and use in my projects. It is based on the [Vercel Style Guide](https://github.com/vercel/style-guide).
 
 The following configs are available:
 

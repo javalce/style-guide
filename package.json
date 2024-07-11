@@ -12,6 +12,11 @@
   },
   "license": "MIT",
   "author": "Javier Valero <javalce29@gmail.com>",
+  "main": "index.js",
+  "files": [
+    "prettier",
+    "eslint"
+  ],
   "scripts": {
     "format:check": "prettier --check .",
     "lint:check": "eslint --max-warnings=0 .",
@@ -73,5 +78,8 @@
     "typescript": {
       "optional": true
     }
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
